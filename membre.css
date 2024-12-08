@@ -543,83 +543,11 @@ body {
 
 
 
-
-
-
-
-.containeretienne {
-    height: 100px; 
-}
-
-.contentetienne {
-    color: rgb(255, 255, 255);
-	font-family: 'Candara', sans-serif;
-    padding: 1px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-}
-
-
-
-
-.containerpierre2 {
-    height: 100px; 
-}
-
-.contentpierre2 {
-    color: rgb(255, 255, 255);
-	font-family: 'Candara', sans-serif;
-    padding: 1px;
-    position: absolute;
-    top: 120%;
-    left: 20%;
-}
-
-
-
-
-.containerjulien {
-    height: 100px; 
-}
-
-.contentjulien {
-    color: rgb(255, 255, 255);
-	font-family: 'Candara', sans-serif;    
-	padding: 1px;
-    position: absolute;
-    top: 180%;
-    left: 50%;
-}
-
-
-
-
-
-.containerthibault {
-    height: 100px; 
-}
-
-.contentthibault {
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1px;
-    position: absolute;
-    top: 240%;
-    left: 20%;
-}
-
-
-
-
-
-
-
 .copyright{
     color: white;
     opacity: 1;
     font-family: 'Candara', sans-serif;
     left: 48%;
-    top:380%;
+    top:260%;
 	position: absolute;
 }
