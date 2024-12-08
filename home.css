@@ -1,0 +1,96 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #ffdd57;
+}
+
+/* Menu responsive (initialement caché sur petits écrans) */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#responsive-menu {
+    display: none; /* Cacher le checkbox (pas nécessaire de le montrer) */
+}
+
+.menu-icon {
+    display: none; /* L'icône hamburger est cachée sur les grands écrans */
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#membre {
+    background-color: #e2e2e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none; /* Cacher le menu sur les petits écrans */
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .menu-icon {
+        display: block; /* Afficher l'icône hamburger */
+    }
+
+    .menu a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #responsive-menu:checked + label + .menu {
+        display: block; /* Afficher le menu quand le checkbox est coché */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 16px; /* Ajuster la taille des liens pour les très petits écrans */
+    }
+
+    .section {
+        padding: 20px;
+    }
+}

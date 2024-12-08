@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="shortcut icon" href="Ku.png" type="image/x-icon">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kukirin</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Input checkbox pour afficher/masquer le menu -->
+            <input type="checkbox" id="responsive-menu" onclick="updatemenu()">
+            <label for="responsive-menu" class="menu-icon">&#9776;</label>
+            <div class="menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#membre" class="nav-link">Membre</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <h1>Bienvenue sur la page d'accueil</h1>
+            <p>Ceci est une page d'exemple avec une navigation simple.</p>
+        </section>
+        <section id="membre" class="section">
+            <h1>Section Membre</h1>
+            <p>Connectez-vous pour accéder à cette section.</p>
+        </section>
+    </main>
+
+    <script>
+        function updatemenu() {
+            const menu = document.querySelector('.menu');
+            const checkbox = document.getElementById('responsive-menu');
+            if (checkbox.checked) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
